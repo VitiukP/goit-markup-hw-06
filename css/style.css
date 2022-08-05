@@ -937,13 +937,12 @@ border-radius: 4px;
   }
 
 .modal-item{
-     display: inline-block;
+     display:block;
   margin-bottom: 12px;
 text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.14;
-  text-align: center;
 color: #212121;
 letter-spacing: 0.03em;}
 
@@ -985,6 +984,7 @@ font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   transition: border-color var(--timing-function);
+  
 }
 
 
@@ -997,20 +997,15 @@ font-size: 14px;
 }
 .contact-form-message {
     width: 100%;
-    resize: none;
     padding: 10px 16px;
     transition: border-color 250ms linear;
     border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-}
-
-.contact-form-message {
-  resize: none;
-  padding-left: 16px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 }
+
 
 .contact-form-message::placeholder {
   font-size: 14px;
@@ -1081,11 +1076,6 @@ border-radius: 4px;
 .contact-form-checkbox:checked ~ .form-uncheck-icon {
   opacity: 0;
 } 
-/* 
-.contact-form-checkbox:focus-visible + .form-uncheck-icon {
-  outline: 2px solid rgb(5, 34, 195, 0.7);
-  outline-offset: 1px;
-} */
 
 .form-uncheck-icon {
   position: absolute;
@@ -1110,7 +1100,6 @@ border-radius: 4px;
   height: 15px;
 
   cursor: pointer;
-/* fill:cornflowerblue; */
   opacity: 0;
   transition: opacity var(--timing-function);
 }
